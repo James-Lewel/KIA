@@ -18,7 +18,7 @@ color_out.setStreamName("color")
 colorCam.video.link(color_out.input)
 
 # 定義圖片的ROI
-whole_image_roi = (0, 0, 1280, 720)  # 調整為整張圖片的大小
+whole_image_roi = (0, 0, 1600 , 900)  # 調整為整張圖片的大小
 
 # 使用pipeline開始擷取
 with dai.Device(pipeline) as device:
