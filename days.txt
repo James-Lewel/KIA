@@ -1,4 +1,4 @@
-day 1
+day 1 - actual day 5
 Lunch
 1 - ROSEMARY GRILLED CHICKEN STEAK - 81
 2 - MAPO TOFU - 34
@@ -10,8 +10,8 @@ Dinner
 2 - EDAMAME CHICKEN - 37
 3 - RAPE - 15
 4 - ENOKI MUSHROOMS IN OYSTER SAUCE -39
-
-day 2
+-------------------------------------------------
+day 2 - actual day 6
 Lunch
 1 - Baked red gushing muscles - 41
 2 - Kelp bud scrambled eggs - 40
@@ -23,8 +23,8 @@ Dinner
 2 - Scallion shredded pork - 45
 3 - Nylon - 31
 4 - Fried sea mushrooms - 5
-
-day 3
+-------------------------------------------------
+day 3 - actual day 7
 Lunch
 1 - Fried red tail winter fish - 46
 2 - Stewed chicken - 47
@@ -36,8 +36,8 @@ Dinner
 2 - Leek fried is not spicy - 51
 3 - Sweet potato - 18
 4 - Red kernel corn bamboo shoot - 50
-
-day 4
+-------------------------------------------------
+day 4 - actual day 8
 Lunch
 1 - Green onion chicken chop - 54
 2 - Big melon fungus and leg slices - 52
@@ -49,18 +49,42 @@ Dinner
 2 - Onion - 57
 3 - Mustar - 56
 4 - Ginger fried cloud ears - 25
-
-
-day 5
+-------------------------------------------------
+day 5 - actual day 9
 Lunch
 1 - Garlic white meat - 6
 2 - Smooth egg shrimp leisin - 60
 3 - rape - 15
 4 - Fried potato red kernel - 59
 
-
 Dinner
 1 - Fried red fish - 24
 2 - Shredded pepper - 62
 3 - Frying Du Mei - 33
 4 - Three cups of eggplant - 61
+-------------------------------------------------
+day 6 - actual day 10
+Lunch
+1 - Fried fish - 17
+2 - Stir -fry - 63 - maybe
+3 - Amaranth - 11
+4 - Burning black sesame beef silk silk - 66
+
+Dinner
+1 - Citrus pork chop - 67
+2 - Tomato chicken stewed cabbage - 68
+3 - Sweet potato - 18
+4 - Braised wolfberry bitter gourd - 69
+-------------------------------------------------
+day 7 - actual day 11
+Lunch
+1 - Grilled honey chicken - 71
+2 - Melon Pork (2) - 70
+3 - Qingjiang cuisine - 1
+4 - Red kernel corn bamboo shoot - 50
+
+Dinner
+1 - Fried yellow croaker - 74
+2 - Polo chicken - 73
+3 - Vermal vegetable - 23
+4 - Sesame Belt Bud - 72
