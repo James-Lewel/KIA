@@ -114,3 +114,16 @@ Dinner
 2 - Rosal Bachelon - 83
 3 - rape - 15
 4 - Braised white radish - 82
+-------------------------------------------------
+day 10 - actual day 14
+Lunch
+1 - Melon chicken - 84
+2 - Color 100 pages - 85
+3 - Qingjiang cuisine - 1
+4 - Brine melon - 86
+
+Dinner
+1 - Fried yellow croaker - 74
+2 - Potato roasted meat - 87
+3 - Amaranth - 11
+4 - Fried sea mushrooms - 5
