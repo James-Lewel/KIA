@@ -1,9 +1,5 @@
 import cv2
 from roboflow import Roboflow
-from kia_meals import get_meals
-
-# Example usage:
-classNames = get_meals()
 
 # Load YOLO model
 rf = Roboflow(api_key="7gqyul75jvef76MNUFCI")
@@ -42,7 +38,7 @@ def process_yolov8(frame):
 
 if __name__ == "__main__":
     # Load image
-    image_file = "Kitchen-Intelligent-Assistant-2/test/images/day_3_dinner-135-_png.rf.bcdff052d877bd76fff44adf67c0b3ae.jpg"
+    image_file = "test/Kitchen-Intelligent-Assistant-2/test/images/day_3_dinner-135-_png.rf.bcdff052d877bd76fff44adf67c0b3ae.jpg"
     image = cv2.imread(image_file)
     
     while True:
