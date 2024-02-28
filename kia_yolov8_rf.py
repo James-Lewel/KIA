@@ -1,6 +1,6 @@
 import cv2
 from roboflow import Roboflow
-from meals import get_meals
+from kia_meals import get_meals
 
 # Example usage:
 classNames = get_meals()

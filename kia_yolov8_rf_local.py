@@ -2,7 +2,7 @@ import cv2
 import math
 import numpy as np
 import supervision as sv
-from meals import get_meals
+from kia_meals import get_meals
 from ultralytics import YOLO
 
 model = YOLO("weights/yolov8n.pt")
