@@ -50,7 +50,7 @@ days_dictionary = {
 
 def format_meal(meal_id, meal_info):
     meal_name, meal_type = meal_info
-    return f"{meal_id} - {meal_name} - {meal_type}"
+    return f"{meal_id} - - - {meal_type}"
 
 def get_meals():
     formatted_meals = [format_meal(meal_id, meal_info) for meal_id, meal_info in meals_dictionary.items()]
