@@ -94,7 +94,7 @@ Lunch
 1 - Bean drum - 49
 2 - Stir -fried Chicken shredded - 75
 3 - Cabbage - 55
-4 - Tomato white cauliflower - 78
+4 - Tomato white cauliflower - 76
 
 Dinner
 1 - Raul roast chicken - 77
