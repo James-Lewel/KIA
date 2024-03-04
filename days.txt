@@ -127,3 +127,81 @@ Dinner
 2 - Potato roasted meat - 87
 3 - Amaranth - 11
 4 - Fried sea mushrooms - 5
+-------------------------------------------------
+day 11 - actual day 15
+Lunch
+1 - Bean curd pork chop - 89
+2 - Vegetable stewed chicken - 90
+3 - Frying Du Mei - 33
+4 - White Ren wolfberry - 88
+
+Dinner
+1 - Turou - 112
+2 - Fried green beans - 91
+3 - rape - 15
+4 - Red kernel corn bamboo shoot - 50
+-------------------------------------------------
+day 12 - actual day 16
+Lunch
+1 - Fried Red Fish - 24 (actual should be 121)
+2 - Mushroom fungus scrambled eggs - 93
+3 - Amaranth - 11
+4 - Green pepper fried potato shreds - 94
+
+Dinner
+1 - Yam Burning Small Ep - 95
+2 - Four seasons fried red pepper tender chicken - 96
+3 - Fried Koscor - 97
+4 - Ginger fried cloud ears - 25
+-------------------------------------------------
+day 13 - actual day 17
+Lunch
+1 - Fried cod - 100
+2 - Sparkling meat shredded (with bean sprouts) - 45
+3 - Cabbage - 55
+4 - Turkey bitter gourd - 98
+
+Dinner
+1 - Rosemary grilled chicken steak - 44
+2 - Sand tea mustard slices - 101
+3 - Qingjiang cuisine - 1
+4 - Flax - 102
+-------------------------------------------------
+day 14 - actual day 18
+Lunch
+1 - Garlic grilled pork chop - 104
+2 - Xiuzhen mushroom fried chicken - 103
+3 - Sweet potato - 18
+4 - Sauce - 105
+
+Dinner
+1 - Fried dragon fish - 107
+2 - Homemade tofu - 106
+3 - rape - 15
+4 - Burning black sesame beef silk silk - 66
+-------------------------------------------------
+day 15 - actual day 19
+Lunch
+1 - Frying fish - 58
+2 - Corn - 109
+3 - Fried Koscor - 97
+4 - Sesame Belt root - 110
+
+Dinner
+1 -
+2 -
+3 -
+4 -
+-------------------------------------------------
+day 16 - actual day 20
+Lunch
+1 -
+2 - 
+3 - 
+4 -
+
+Dinner
+1 -
+2 -
+3 -
+4 -
