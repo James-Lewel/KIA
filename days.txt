@@ -188,10 +188,10 @@ Lunch
 4 - Sesame Belt root - 110
 
 Dinner
-1 -
-2 -
-3 -
-4 -
+1 - Frying muscle - 112
+2 - Big melon fungus slices - 111
+3 - Nylon - 31
+4 - Pumpkin - 42
 -------------------------------------------------
 day 16 - actual day 20
 Lunch
