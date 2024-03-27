@@ -19,7 +19,7 @@ Lunch
 4 - Pumpkin - 42
 
 Dinner
-1 - Ginger sauce -flavored braised chicken steak - 44
+1 - Honey Miso Braised Chicken steak - 36
 2 - Scallion shredded pork - 45
 3 - Nylon - 31
 4 - Fried sea mushrooms - 5
@@ -260,13 +260,13 @@ Dinner
 -------------------------------------------------
 day 21 - actual day 4
 Lunch
-1 -
-2 - 
-3 - 
-4 -
+1 - Cashmere fish sashimi - 28
+2 - Stir -fried ten brocade pork shreds - 27
+3 - Qingjiang cuisine - 1
+4 - Yellow pepper stir -fried bud - 29
 
 Dinner
-1 -
-2 -
-3 -
-4 -
+1 - Saffron - 32
+2 - Potato red kernel chicken - 30
+3 - Nylon - 31
+4 - Turkey bitter gourd - 98
