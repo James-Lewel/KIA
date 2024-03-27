@@ -1,5 +1,5 @@
-meals_dictionary = {
-    -1: ['', 'side'],
+chinese_meals = {
+    0: ['', 'side'],
     5: ['炒海茸', 'side'],
     11: ['莧菜', 'side'],
     15: ['油菜', 'side'],
@@ -27,11 +27,11 @@ meals_dictionary = {
 
 days_dictionary = {
     1: {'lunch': [3, 2, 88, 1], 'dinner': [6, 7, 55, 5]},
-    2: {'lunch': [2, 9, 59, 11], 'dinner': [17, 13, 15, 14]},
-    3: {'lunch': [], 'dinner': []},
-    4: {'lunch': [], 'dinner': []},
-    5: {'lunch': [81, 34, 33, 35], 'dinner': [38, 37, 15, 39]},
-    6: {'lunch': [41, 40, 23, 42], 'dinner': [44, 45, 31, 5]},
+    2: {'lunch': [12, 9, 59, 11], 'dinner': [17, 13, 15, 14]},
+    3: {'lunch': [22, 20, 18, 21], 'dinner': [24, 26, 23, 25]},
+    4: {'lunch': [28, 27, 1, 29], 'dinner': [32, 30, 31, 98]},
+    5: {'lunch': [81, 34, 33, 0], 'dinner': [38, 37, 15, 39]},
+    6: {'lunch': [41, 40, 23, 42], 'dinner': [36, 45, 31, 5]},
     7: {'lunch': [46, 47, 11, 48], 'dinner': [49, 51, 18, 50]},
     8: {'lunch': [54, 52, 1, 53], 'dinner': [58, 57, 56, 25]},
     9: {'lunch': [6, 60, 15, 59], 'dinner': [24, 62, 33, 61]},
@@ -54,7 +54,7 @@ def format_meal(meal_id, meal_info):
     return f"{meal_id} - - - {meal_type}"
 
 def get_meals():
-    formatted_meals = [format_meal(meal_id, meal_info) for meal_id, meal_info in meals_dictionary.items()]
+    formatted_meals = [format_meal(meal_id, meal_info) for meal_id, meal_info in chinese_meals.items()]
     return formatted_meals
 
 def get_meal(meal_day=None, meal_time=None):
@@ -69,10 +69,10 @@ def get_meal(meal_day=None, meal_time=None):
     else:
         all_meals = days_dictionary[meal_day].get(meal_time, [])
         
-    return [format_meal(meal_id, meals_dictionary.get(meal_id)) for meal_id in all_meals]
+    return [format_meal(meal_id, chinese_meals.get(meal_id)) for meal_id in all_meals]
 
 def get_custom_meal(meal_list=[]):
     if not meal_list:
         return "Invalid meal list"
-    return [format_meal(meal_id, meals_dictionary.get(meal_id)) for meal_id in meal_list]
+    return [format_meal(meal_id, chinese_meals.get(meal_id)) for meal_id in meal_list]
     
