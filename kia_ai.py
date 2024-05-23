@@ -4,6 +4,7 @@ from kia_depth import Midas_Depth
 from roboflow import Roboflow
 from inference_sdk import InferenceHTTPClient
 from kia_meals import days_dictionary
+from oak_depth import Stereo_Camera
 
 client = InferenceHTTPClient(
     api_url="http://localhost:9001",
@@ -20,6 +21,7 @@ class ObjectDetection:
         self.width = 960
         self.height = 540
         self.depth_model = Midas_Depth()
+        self.stereo_camera = StereoCamera()
 
     def get_class_color(self, class_name):
         if "-m-" in class_name:
@@ -42,26 +44,27 @@ class ObjectDetection:
         edges = cv2.Canny(gray_frame, 100, 200)
 
         # Obtain depth map
+        #depth_map = self.stereoCamera.getDepth(frame)
         depth_map = self.depth_model.get_depth_image(frame)
-        threshold = np.percentile(depth_map, 50) 
+        #threshold = np.percentile(depth_map, 50) 
 
         # Apply a mask using the depth map to focus only on relevant areas
-        masked_depth_map = np.where(depth_map < threshold, 1, 0)
-        masked_edges = cv2.bitwise_and(edges, edges, mask=(masked_depth_map * 255).astype(np.uint8))
+        #masked_depth_map = np.where(depth_map < threshold, 1, 0)
+        #masked_edges = cv2.bitwise_and(edges, edges, mask=(masked_depth_map * 255).astype(np.uint8))
 
-        kernel = np.ones((5, 5), np.uint8)
-        dilated_edges = cv2.dilate(masked_edges, kernel, iterations=1)
+        #kernel = np.ones((5, 5), np.uint8)
+        #dilated_edges = cv2.dilate(masked_edges, kernel, iterations=1)
 
-        filled_areas = dilated_edges
-        filled_pixels = cv2.countNonZero(filled_areas)
-        total_pixels = frame.shape[0] * frame.shape[1]
-        proportion = 100 * (filled_pixels / total_pixels)
+        #filled_areas = dilated_edges
+        #filled_pixels = cv2.countNonZero(filled_areas)
+        #total_pixels = frame.shape[0] * frame.shape[1]
+        #proportion = 100 * (filled_pixels / total_pixels)
 
-        cv2.imshow('filled', filled_areas)
+        #cv2.imshow('filled', filled_areas)
         cv2.imshow('depth map', (depth_map * 255).astype(np.uint8))
         cv2.waitKey()
 
-        return proportion
+        #return proportion
 
     
     def process_yolov8(self, frame):
@@ -101,10 +104,12 @@ class ObjectDetection:
             cv2.putText(frame, label, (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
             
             depth_map = self.depth_model.get_depth_image(frame)
+            #depth_map = self.stereo_camera.get_depth(frame)
             cv2.imshow('depth map - full', (depth_map * 255).astype(np.uint8))
             
             # Estimate plate proportions and print below bounding box
-            plate_proportion = self.estimate_proportions(frame[y1:y2, x1:x2])
+            plate_proportion = 1
+            self.estimate_proportions(frame[y1:y2, x1:x2])
             text = f'Est.: {plate_proportion:.2f}%'
             text_size, _ = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
             cv2.rectangle(frame, (x1, y2 - text_size[1]), (x1 + text_size[0], y2), color, -1)
@@ -118,7 +123,7 @@ if __name__ == "__main__":
     yolo_processor = ObjectDetection()
     #video_file = "records\\record_20240312_135626.avi"
     #cap = cv2.VideoCapture(video_file)
-    picture = cv2.imread('data\\0 degrees\day_14\lunch\day_14_lunch (1).png')
+    picture = cv2.imread('data\\0 degrees\day_14\lunch\day_14_lunch (140).png')
     while True:
         #ret, frame = cap.read()
         #if not ret:
