@@ -17,14 +17,14 @@ class Stereo_Camera:
         self.monoRight = self.get_mono_camera(isLeft=False)
         self.stereo = self.get_stereo_pair(self.monoLeft, self.monoRight)
         
-        self.disparityMultiplier = 255 / self.stereo.getMaxDisparity()
+        self.disparityMultiplier = 255 / self.stereo.initialConfig.getMaxDisparity()
 
         self.setup_outputs()
 
     def get_mono_camera(self, isLeft):
         mono = self.pipeline.createMonoCamera()
         mono.setResolution(dai.MonoCameraProperties.SensorResolution.THE_400_P)
-        mono.setBoardSocket(dai.CameraBoardSocket.LEFT if isLeft else dai.CameraBoardSocket.RIGHT)
+        mono.setBoardSocket(dai.CameraBoardSocket.CAM_B if isLeft else dai.CameraBoardSocket.CAM_C)
         return mono
 
     def get_stereo_pair(self, monoLeft, monoRight):
@@ -68,12 +68,14 @@ class Stereo_Camera:
 
     def process_frames(self):
         with dai.Device(self.pipeline) as device:
+            device.setIrLaserDotProjectorIntensity(1)
+            device.setIrFloodLightIntensity(0)
             disparityQueue = device.getOutputQueue(name="disparity", maxSize=1, blocking=False)
             rectifiedLeftQueue = device.getOutputQueue(name="rectifiedLeft", maxSize=1, blocking=False)
             rectifiedRightQueue = device.getOutputQueue(name="rectifiedRight", maxSize=1, blocking=False)
 
             cv2.namedWindow("Stereo Pair")
-            cv2.setmouse_callback("Stereo Pair", self.mouse_callback)
+            cv2.setMouseCallback("Stereo Pair", self.mouse_callback)
 
             while True:
                 disparity = self.get_frame(disparityQueue)
